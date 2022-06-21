@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		DB179623286158E70089A578 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB179622286158E70089A578 /* AppDelegate.swift */; };
 		DB179625286158E70089A578 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB179624286158E70089A578 /* SceneDelegate.swift */; };
-		DB179627286158E70089A578 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB179626286158E70089A578 /* ViewController.swift */; };
+		DB179627286158E70089A578 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB179626286158E70089A578 /* AnimationViewController.swift */; };
 		DB17962A286158E70089A578 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB179628286158E70089A578 /* Main.storyboard */; };
 		DB17962C286158E90089A578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB17962B286158E90089A578 /* Assets.xcassets */; };
 		DB17962F286158E90089A578 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB17962D286158E90089A578 /* LaunchScreen.storyboard */; };
+		DB17963B28615E400089A578 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17963A28615E400089A578 /* Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DB17961F286158E70089A578 /* AnimationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB179622286158E70089A578 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB179624286158E70089A578 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB179626286158E70089A578 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB179626286158E70089A578 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		DB179629286158E70089A578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB17962B286158E90089A578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB17962E286158E90089A578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB179630286158E90089A578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB17963A28615E400089A578 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		DB179621286158E70089A578 /* AnimationApp */ = {
 			isa = PBXGroup;
 			children = (
-				DB179622286158E70089A578 /* AppDelegate.swift */,
-				DB179624286158E70089A578 /* SceneDelegate.swift */,
-				DB179626286158E70089A578 /* ViewController.swift */,
-				DB179628286158E70089A578 /* Main.storyboard */,
-				DB17962B286158E90089A578 /* Assets.xcassets */,
-				DB17962D286158E90089A578 /* LaunchScreen.storyboard */,
-				DB179630286158E90089A578 /* Info.plist */,
+				DB179638286159480089A578 /* ViewControllers */,
+				DB1796372861593C0089A578 /* Storyboards */,
+				DB17963C28615E4C0089A578 /* Models */,
+				DB1796362861590B0089A578 /* App */,
+				DB179639286159580089A578 /* Resource */,
 			);
 			path = AnimationApp;
+			sourceTree = "<group>";
+		};
+		DB1796362861590B0089A578 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DB179622286158E70089A578 /* AppDelegate.swift */,
+				DB179624286158E70089A578 /* SceneDelegate.swift */,
+				DB179630286158E90089A578 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DB1796372861593C0089A578 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DB179628286158E70089A578 /* Main.storyboard */,
+				DB17962D286158E90089A578 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DB179638286159480089A578 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB179626286158E70089A578 /* AnimationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DB179639286159580089A578 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DB17962B286158E90089A578 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DB17963C28615E4C0089A578 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB17963A28615E400089A578 /* Animation.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +181,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB179627286158E70089A578 /* ViewController.swift in Sources */,
+				DB179627286158E70089A578 /* AnimationViewController.swift in Sources */,
 				DB179623286158E70089A578 /* AppDelegate.swift in Sources */,
+				DB17963B28615E400089A578 /* Animation.swift in Sources */,
 				DB179625286158E70089A578 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N537R39CDZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimationApp/Info.plist;
+				INFOPLIST_FILE = AnimationApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N537R39CDZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimationApp/Info.plist;
+				INFOPLIST_FILE = AnimationApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
